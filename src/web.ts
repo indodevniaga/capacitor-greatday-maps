@@ -1,10 +1,18 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { MapsPlugin } from './definitions';
+import type { LabelLanguageOptions, LabelLanguageRadiusOptions, MapsPlugin } from './definitions';
 
 export class MapsWeb extends WebPlugin implements MapsPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async getLocation(): Promise<any> {
+    throw new Error('Method not implemented.');
+  }
+  async getLocationRadius(_workLocationData?: string | undefined): Promise<any> {
+    throw new Error('Method not implemented.');
+  }
+  async getLocationLabelLanguage(_options?: LabelLanguageOptions | undefined): Promise<any> {
+    throw new Error('Method not implemented.');
+  }
+  async getLocationLabelRadiusLanguage(_options?: LabelLanguageRadiusOptions | undefined): Promise<any> {
+    throw new Error('Method not implemented.');
   }
 }
