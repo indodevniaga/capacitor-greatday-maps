@@ -1,6 +1,6 @@
-export interface MapsPlugin {
+export interface GreatDayMapsPlugin {
   getLocation(): Promise<any>;
-  getLocationRadius(workLocationData?: string): Promise<any>;
+  getLocationRadius(workLocationData: string): Promise<any>;
   getLocationLabelLanguage(options?: LabelLanguageOptions): Promise<any>;
   getLocationLabelRadiusLanguage(options?: LabelLanguageRadiusOptions): Promise<any>;
 }

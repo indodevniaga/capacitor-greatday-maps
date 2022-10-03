@@ -1,10 +1,10 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { MapsPlugin } from './definitions';
+import type { GreatDayMapsPlugin } from './definitions';
 
-const Maps = registerPlugin<MapsPlugin>('Maps', {
-  web: () => import('./web').then(m => new m.MapsWeb()),
+const GreatDayMaps = registerPlugin<GreatDayMapsPlugin>('GreatDayMaps', {
+  web: () => import('./web').then(m => new m.GreatDayMapsWeb()),
 });
 
 export * from './definitions';
-export { Maps };
+export { GreatDayMaps };

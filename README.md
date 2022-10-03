@@ -38,7 +38,7 @@ getLocation() => Promise<any>
 ### getLocationRadius(...)
 
 ```typescript
-getLocationRadius(workLocationData?: string | undefined) => Promise<any>
+getLocationRadius(workLocationData: string) => Promise<any>
 ```
 
 | Param                  | Type                |

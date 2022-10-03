@@ -1,8 +1,8 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { LabelLanguageOptions, LabelLanguageRadiusOptions, MapsPlugin } from './definitions';
+import type { LabelLanguageOptions, LabelLanguageRadiusOptions, GreatDayMapsPlugin } from './definitions';
 
-export class MapsWeb extends WebPlugin implements MapsPlugin {
+export class GreatDayMapsWeb extends WebPlugin implements GreatDayMapsPlugin {
   async getLocation(): Promise<any> {
     throw new Error('Method not implemented.');
   }
