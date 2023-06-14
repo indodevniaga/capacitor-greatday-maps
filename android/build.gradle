@@ -66,5 +66,5 @@ dependencies {
     //noinspection GradleDependency
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    implementation "com.github.asephermann:AndroidLocation:v9"
+    implementation "com.github.asephermann:AndroidLocation:2.2.3"
 }
