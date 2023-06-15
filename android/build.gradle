@@ -66,5 +66,8 @@ dependencies {
     //noinspection GradleDependency
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    implementation "com.github.asephermann:AndroidLocation:2.2.3"
+    implementation('com.github.indodevniaga:AndroidLocation:2.2.2') {
+        exclude module: 'jetified-AndroidLocation-2.2.2-runtime'
+    }
+    implementation 'com.github.asephermann:AndroidLocation:2.2.3'
 }
