@@ -7,12 +7,12 @@ import Capacitor
  */
 @objc(GreatDayMapsPlugin)
 public class GreatDayMapsPlugin: CAPPlugin {
-    private let implementation = GreatDayMaps()
+    // private let implementation = GreatDayMaps()
 
     @objc func echo(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""
         call.resolve([
-            "value": implementation.echo(value)
+            "value": ""
         ])
     }
 }
